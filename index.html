@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="refresh" content="500">-->  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarun Exp-1</title>
+    <link rel="icon" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        var isWindows = navigator.platform.indexOf('Win') > -1;
+        if (!isWindows) {
+            // Redirect to another page or display a message
+            window.location.href = 'not_supported.html';
+        }
+    </script>
+    <a id="top"></a>
+    <div>
+        <nav>
+            <ul class="bar">
+                <a><img id="img1" src="icon.png" alt="icon"></a>
+                <a href="#" style="text-decoration: none;">Experiment</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#About" style="text-decoration: none;">About</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#Bootcamp" style="text-decoration: none;">Bootcamps</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#Job-Opportunity" style="text-decoration: none;">Job-Opportunity</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="contact" href="#contact">Contact Us</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            </ul>
+        </nav>
+    </div>
+    <marquee class="scroll" behavior="scroll" direction="left" onmouseout="this.start()" onmouseover="this.stop()">
+        This is my Second Experiment
+    </marquee>
+
+    <div><img src="banner.jpg" alt="banner" class="banner"></div>
+
+    <section>
+        <h1 id="About">About Experiment</h1>
+        <div class="about">
+            <div id="text">
+                <p style="margin-top: 0%;">Explore job openings and learning opportunities in full-stack development
+                    and data science across various industries on our platform. Access resources and tutorials to
+                    enhance your skills and make meaningful contributions to society. Whether
+                    you're a seasoned professional or a beginner, our page is here to support your growth.
+                    <a href="https://www.youtube.com/watch?v=dX8396ZmSPk" target="_blank"><abbr
+                            title="FreecodeCamp"><u>(Practice Exercise)</u></abbr></a>
+                </p>
+                <section id="Bootcamp">
+                    <div>
+                        <h3>Explore freely available online Bootcamps to master essential skills.</h2>
+                        <ul type="a" id="bootcampf">
+                            <a href="https://github.com/kunal-kushwaha/DSA-Bootcamp-Java" target="_blank">
+                                <li class="text1" style="text-decoration: none;">Ex: kunal-kushwaha</li>
+                            </a>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div id="team">
+                <img src="team.jpg" id="team-image" alt="team">
+            </div>
+        </div>
+        
+    </section>
+    <section id="Job-Opportunity">
+        <h2 class="job-op">Job Opportunities</h1>
+    </section>
+    <div class="table">
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th rowspan="2">Sno</th>
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted On</th>
+            </tr>
+            <tr class="jobs-header-row">
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr class="job-data-row">
+                <td>1</td>
+                <td>Frontend developer</td>
+                <td>Bengalure</td>
+                <td>India</td>
+                <td>Rs 12,00,000</td>
+                <td>Mar 3, 2024</td>
+            </tr>
+            <tr class="job-data-row">
+                <td>2</td>
+                <td>Full Stack Eng..</td>
+                <td>Dehli</td>
+                <td>India</td>
+                <td>Rs 15,00,000</td>
+                <td>Mar 3, 2024</td>
+            </tr>
+            <tr class="job-data-row">
+                <td>3</td>
+                <td>Data Scientist</td>
+                <td>San Francisco</td>
+                <td>California</td>
+                <td>$ 175,000</td>
+                <td>Mar 3, 2024</td>
+            </tr>
+            <tr class="job-data-row">
+                <td>4</td>
+                <td>ML Engineer</td>
+                <td colspan="2">Remote</td>
+                <td>$ 80,000</td>
+                <td>Mar 3, 2024</td>
+            </tr>
+        </table>
+    </div>
+
+<div id="form"></div>
+
+    <form id="Application" 
+            action="https://formbold.com/s/9BggM"
+            method="post"
+            enctype="multipart/form-data">
+
+        <div id="form">
+            <h3>Submit Your Application</h3>
+        </div>
+        <div id="form1">
+            <label for="name">Name</label>
+            <input type="text" id="Full-Name" name="Full Name" autocomplete="off" required>
+        </div>
+        <div id="form1">
+            <label for="date">Date Of Birth</label>
+            <input type="date" name="date of Birth">
+        </div>
+        <div id="form1">
+            <label for="gender">Gender : </label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+        </div>
+        <div id="form1">
+            <label for="email">Email</label>
+            <input type="email" id="email" autocomplete="off" required>
+        </div>
+        <div id="form1">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" autocomplete="off" placeholder="Enter phone number" required>
+            <br><small>Format: +91 XXXXX XXXXX </small>
+        </div>
+        <div id="form1">
+            <label for="position">Role : </label>
+            <input list="job-role" name="job-role" required>
+            <datalist id="job-role">
+                <option value="Frontend Eng">
+                <option value="Full Stack Eng">
+                <option value="Data Scientist">
+                <option value="ML Engineer">
+            </datalist>
+        </div>
+        <div id="form1">
+            <label for="resume">Upload Resume (Max 1MB):</label><br>
+            <div style="border: 1px solid rgb(161, 158, 158); width: 50%;">
+                <input type="file" style="margin-left: 4px;" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+            <br><small style="font-size: 12px;">Accepted file formats: PDF, DOC, DOCX</small>
+            </div>
+        </div>
+        <div id="form1">
+            <label for="cover-letter">Cover Letter : </label><br>
+            <textarea name="cover-letter" style="box-shadow: 0 2px 1px 0.5px; color: rgb(86, 86, 79);" autocomplete="off" id="cover-letter" cols="50" rows="10"></textarea>
+        </div>
+        <div id="form1">
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">I agree to the terms and conditions</label>
+        </div>
+        <div id="form3">
+            <input type="submit" id="form-b" value="Submit Application">
+        </div>
+    </form>
+</div>
+
+    <div class="container1">
+        <section id="contact"></section>
+        
+            <div class="abc">
+                <a class="ex"
+                    href="mailto:tarun2tncc@gmail.com?subject=License Inquiry&body=Hello, I am interested in discussing the license for your website."
+                    target="_blank">Chat
+                    with me regarding Experiment
+                </a>
+            </div>
+
+        <div class="b-3">
+            <a class="cone" href="https://www.linkedin.com/in/tarunkumarpandi/" target="_blank">linkedin</a>
+            <a class="cone" href="https://leetcode.com/tarun2tncc/" target="_blank">leetcode</a>
+            <a class="whatsapp-img" href="whatsapp.png"></a>
+            <a class="cone" href="https://wa.me/?phone=8790751604" target="_blank">WhatsApp</a>
+        </div>
+
+    </div>
+    <div id="bottom">
+
+        <div>
+            <footer class="f1">
+                <p>Copyright &copy; 2024 Tarun Experiment. All rights reserved.</p>
+                <p>This website is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/"
+                        target="_blank">Creative Commons Attribution 4.0 International License
+
+                    </a>.</p>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>
